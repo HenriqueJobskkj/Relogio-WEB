@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Relógio digital moderno com data e horário em tempo real.">
+
+    <title>Meu Relógio Digital</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="container">
+
+        <section class="relogio-card">
+
+            <div class="topo">
+                <div class="logo">
+                    <span class="ponto"></span>
+                    <span>MY CLOCK</span>
+                </div>
+
+                <button id="tema" class="botao-tema" aria-label="Alternar tema">
+                    ☀
+                </button>
+            </div>
+
+            <div class="conteudo">
+
+                <p class="subtitulo">HORÁRIO ATUAL</p>
+
+                <div class="relogio">
+
+                    <div class="unidade">
+                        <span id="horas">00</span>
+                        <small>HORAS</small>
+                    </div>
+
+                    <span class="separador">:</span>
+
+                    <div class="unidade">
+                        <span id="minutos">00</span>
+                        <small>MINUTOS</small>
+                    </div>
+
+                    <span class="separador">:</span>
+
+                    <div class="unidade segundos">
+                        <span id="segundos">00</span>
+                        <small>SEGUNDOS</small>
+                    </div>
+
+                </div>
+
+                <div class="periodo">
+                    <span id="periodo">☀ Boa tarde</span>
+                </div>
+
+                <div class="linha"></div>
+
+                <div class="data">
+                    <span class="icone-data">📅</span>
+                    <span id="data">Carregando data...</span>
+                </div>
+
+            </div>
+
+            <footer>
+                <span>Seu tempo, seu momento.</span>
+                <span class="status">
+                    <span class="status-ponto"></span>
+                    AO VIVO
+                </span>
+            </footer>
+
+        </section>
+
+    </main>
+
+    <script src="assets/js/script.js"></script>
+
+</body>
+</html>
